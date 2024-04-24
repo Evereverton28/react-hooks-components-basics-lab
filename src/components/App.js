@@ -1,32 +1,39 @@
-import React from "react";
+import React from 'react';
 
-function NavBar() {
-  return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
-  );
+
+
+function Navbar() {
+    return (
+        <nav>
+            {/* Navbar content here */}
+        </nav>
+    );
 }
 
 function Home() {
-  return (
-    <div id="home">
-      <h1>Home</h1>
-    </div>
-  );
+    return (
+        <div id="home">
+            {/* Home content here */}
+        </div>
+    );
 }
 
-{/* write an <About> component here */}
-
+function About() {
+    return (
+        <div id="about">
+            <h2>About</h2>
+        </div>
+    );
+}
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <Home />
+            <About />
+        </div>
+    );
 }
 
 export default App;
